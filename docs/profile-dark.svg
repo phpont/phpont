@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="975" height="460" viewBox="0 0 975 460" role="img" aria-labelledby="title description">
+  <title id="title">phpont profile terminal</title>
+  <desc id="description">A handcrafted terminal-style profile with ASCII skull artwork and developer information.</desc>
+  <style>
+    svg { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 17px; font-variant-ligatures: none; }
+    text, tspan { white-space: pre; }
+    .panel { fill: #161b22; stroke: #30363d; stroke-width: 1; }
+    .primary { fill: #c9d1d9; } .muted { fill: #8b949e; } .key { fill: #ffa657; } .value { fill: #a5d6ff; }
+    .cursor-primary { fill: #c9d1d9; } .cursor-value { fill: #a5d6ff; }
+  </style>
+  <defs><clipPath id="ascii-viewport"><rect x="0" y="18" width="365" height="420"/></clipPath><g id="panel"><rect x="0" y="0" width="975" height="460" rx="14" class="panel"/></g><g id="ascii-lines"><text id="ascii-line-0" x="-50" y="35" class="primary">                      :::!~!!!!!:.                   </text>
+      <text id="ascii-line-1" x="-50" y="55" class="primary">                  .xUHWH!! !!?M88WHX:.             </text>
+      <text id="ascii-line-2" x="-50" y="75" class="primary">                .X*#M@$!!  !X!M$$$$$$WWx:.         </text>
+      <text id="ascii-line-3" x="-50" y="95" class="primary">               :!!!!!!?H! :!$!$$$$$$$$$$8X:        </text>
+      <text id="ascii-line-4" x="-50" y="115" class="primary">              !!~  ~:~!! :~!$!#$$$$$$$$$$8X:       </text>
+      <text id="ascii-line-5" x="-50" y="135" class="primary">             :!~::!H!    ~.U$X!?R$$$$$$$$MM!      </text>
+      <text id="ascii-line-6" x="-50" y="155" class="primary">             ~!~!!!!~~ .:XW$$$U!!?$$$$$$RMM!       </text>
+      <text id="ascii-line-7" x="-50" y="175" class="primary">               !:~~~ .:!M&quot;T#$$$$WX??#MRRMMM!       </text>
+      <text id="ascii-line-8" x="-50" y="195" class="primary">               ~?WuxiW*`   `&quot;#$$$$8!!!!??!!!      </text>
+      <text id="ascii-line-9" x="-50" y="215" class="primary">             :X- M$$$$       `&quot;T#$T~!8$WUXU~      </text>
+      <text id="ascii-line-10" x="-50" y="235" class="primary">            :%`  ~#$$$m:        ~!~ ?$$$$$$       </text>
+      <text id="ascii-line-11" x="-50" y="255" class="primary">          :!`.-   ~T$$$$8xx.  .xWW- ~&quot;&quot;##*&quot;       </text>
+      <text id="ascii-line-12" x="-50" y="275" class="primary">.....   -~~:&lt;` !    ~?T#$$@@W@*?$$      /`        </text>
+      <text id="ascii-line-13" x="-50" y="295" class="primary">W$@@M!!! .!~~ !!     .:XUW$W!~ `&quot;~:    :          </text>
+      <text id="ascii-line-14" x="-50" y="315" class="primary">#&quot;~~`.:x%`!!  !H:   !WM$$$$Ti.: .!WUn+!`         </text>
+      <text id="ascii-line-15" x="-50" y="335" class="primary">:::~:!!`:X~ .: ?H.!u &quot;$$$B$$$!W:U!T$$M~          </text>
+      <text id="ascii-line-16" x="-50" y="355" class="primary">.~~   :X@!.-~   ?@WTWo(&quot;*$$$W$TH$! `            </text>
+      <text id="ascii-line-17" x="-50" y="375" class="primary">Wi.~!X$?!-~    : ?$$$B$Wu(&quot;**$RM!               </text>
+      <text id="ascii-line-18" x="-50" y="395" class="primary">$R@i.~~ !     :   ~$$$$$B$$en:``                </text>
+      <text id="ascii-line-19" x="-50" y="415" class="primary">?MXT@Wx.~    :     ~&quot;##*$$$$M~                  </text></g></defs>
+  <g id="final-state" data-final-state="true"><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/>
+      <use href="#ascii-line-18"/>
+      <use href="#ascii-line-19"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="380" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail.com</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text></g>
+  <g id="animation-overlay" data-animation-overlay="true" visibility="hidden" data-duration-ms="2125"><set attributeName="visibility" to="visible" begin="100ms" dur="2025ms" fill="remove"/><g id="state-00" data-animation-state="0" visibility="hidden"><set attributeName="visibility" to="visible" begin="100ms" dur="100ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/>
+      <use href="#ascii-line-18"/>
+      <use href="#ascii-line-19"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="380" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail.com</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text></g><g id="state-01" data-animation-state="1" visibility="hidden"><set attributeName="visibility" to="visible" begin="200ms" dur="70ms" fill="remove"/><use href="#panel"/></g><g id="state-02" data-animation-state="2" visibility="hidden"><set attributeName="visibility" to="visible" begin="270ms" dur="55ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/></g>
+    <text x="380" y="40" class="primary">php</text>
+    <rect class="cursor-primary" x="412.60" y="26" width="6" height="15"/></g><g id="state-03" data-animation-state="3" visibility="hidden"><set attributeName="visibility" to="visible" begin="325ms" dur="55ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <rect class="cursor-primary" x="443.20" y="26" width="6" height="15"/></g><g id="state-04" data-animation-state="4" visibility="hidden"><set attributeName="visibility" to="visible" begin="380ms" dur="55ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text></g><g id="state-05" data-animation-state="5" visibility="hidden"><set attributeName="visibility" to="visible" begin="435ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian</tspan></text>
+    <rect class="cursor-value" x="484.00" y="76" width="6" height="15"/></g><g id="state-06" data-animation-state="6" visibility="hidden"><set attributeName="visibility" to="visible" begin="485ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <rect class="cursor-value" x="586.00" y="76" width="6" height="15"/></g><g id="state-07" data-animation-state="7" visibility="hidden"><set attributeName="visibility" to="visible" begin="535ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 </tspan></text>
+    <rect class="cursor-value" x="494.20" y="96" width="6" height="15"/></g><g id="state-08" data-animation-state="8" visibility="hidden"><set attributeName="visibility" to="visible" begin="585ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <rect class="cursor-value" x="545.20" y="96" width="6" height="15"/></g><g id="state-09" data-animation-state="9" visibility="hidden"><set attributeName="visibility" to="visible" begin="635ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <rect class="cursor-value" x="463.60" y="116" width="6" height="15"/></g><g id="state-10" data-animation-state="10" visibility="hidden"><set attributeName="visibility" to="visible" begin="685ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <rect class="cursor-value" x="484.00" y="136" width="6" height="15"/></g><g id="state-11" data-animation-state="11" visibility="hidden"><set attributeName="visibility" to="visible" begin="735ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim,</tspan></text>
+    <rect class="cursor-value" x="535.00" y="156" width="6" height="15"/></g><g id="state-12" data-animation-state="12" visibility="hidden"><set attributeName="visibility" to="visible" begin="785ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <rect class="cursor-value" x="616.60" y="156" width="6" height="15"/></g><g id="state-13" data-animation-state="13" visibility="hidden"><set attributeName="visibility" to="visible" begin="835ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Sta</tspan></text>
+    <rect class="cursor-value" x="545.20" y="176" width="6" height="15"/></g><g id="state-14" data-animation-state="14" visibility="hidden"><set attributeName="visibility" to="visible" begin="885ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <rect class="cursor-value" x="688.00" y="176" width="6" height="15"/></g><g id="state-15" data-animation-state="15" visibility="hidden"><set attributeName="visibility" to="visible" begin="935ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Se</tspan></text>
+    <rect class="cursor-value" x="514.60" y="196" width="6" height="15"/></g><g id="state-16" data-animation-state="16" visibility="hidden"><set attributeName="visibility" to="visible" begin="985ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <rect class="cursor-value" x="637.00" y="196" width="6" height="15"/></g><g id="state-17" data-animation-state="17" visibility="hidden"><set attributeName="visibility" to="visible" begin="1035ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScrip</tspan></text>
+    <rect class="cursor-value" x="708.40" y="236" width="6" height="15"/></g><g id="state-18" data-animation-state="18" visibility="hidden"><set attributeName="visibility" to="visible" begin="1085ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Py</tspan></text>
+    <rect class="cursor-value" x="820.60" y="236" width="6" height="15"/></g><g id="state-19" data-animation-state="19" visibility="hidden"><set attributeName="visibility" to="visible" begin="1135ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <rect class="cursor-value" x="912.40" y="236" width="6" height="15"/></g><g id="state-20" data-animation-state="20" visibility="hidden"><set attributeName="visibility" to="visible" begin="1185ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portugue</tspan></text>
+    <rect class="cursor-value" x="626.80" y="256" width="6" height="15"/></g><g id="state-21" data-animation-state="21" visibility="hidden"><set attributeName="visibility" to="visible" begin="1235ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <rect class="cursor-value" x="739.00" y="256" width="6" height="15"/></g><g id="state-22" data-animation-state="22" visibility="hidden"><set attributeName="visibility" to="visible" begin="1285ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.</tspan></text>
+    <rect class="cursor-value" x="504.40" y="356" width="6" height="15"/></g><g id="state-23" data-animation-state="23" visibility="hidden"><set attributeName="visibility" to="visible" begin="1335ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <rect class="cursor-value" x="596.20" y="356" width="6" height="15"/></g><g id="state-24" data-animation-state="24" visibility="hidden"><set attributeName="visibility" to="visible" begin="1385ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@pauloh</tspan></text>
+    <rect class="cursor-value" x="565.60" y="376" width="6" height="15"/></g><g id="state-25" data-animation-state="25" visibility="hidden"><set attributeName="visibility" to="visible" begin="1435ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/>
+      <use href="#ascii-line-18"/>
+      <use href="#ascii-line-19"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <rect class="cursor-value" x="657.40" y="376" width="6" height="15"/></g><g id="state-26" data-animation-state="26" visibility="hidden"><set attributeName="visibility" to="visible" begin="1485ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/>
+      <use href="#ascii-line-18"/>
+      <use href="#ascii-line-19"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text>
+    <text x="380" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohpo</tspan></text>
+    <rect class="cursor-value" x="524.80" y="396" width="6" height="15"/></g><g id="state-27" data-animation-state="27" visibility="hidden"><set attributeName="visibility" to="visible" begin="1535ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/>
+      <use href="#ascii-line-18"/>
+      <use href="#ascii-line-19"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text>
+    <text x="380" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail</tspan></text>
+    <rect class="cursor-value" x="616.60" y="396" width="6" height="15"/></g><g id="state-28" data-animation-state="28" visibility="hidden"><set attributeName="visibility" to="visible" begin="1585ms" dur="50ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/>
+      <use href="#ascii-line-18"/>
+      <use href="#ascii-line-19"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text>
+    <text x="380" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail.com</tspan></text>
+    <rect class="cursor-value" x="657.40" y="396" width="6" height="15"/></g><g id="state-29" data-animation-state="29" visibility="hidden"><set attributeName="visibility" to="visible" begin="1635ms" dur="60ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/>
+      <use href="#ascii-line-18"/>
+      <use href="#ascii-line-19"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="380" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail.com</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text></g><g id="state-30" data-animation-state="30" visibility="hidden"><set attributeName="visibility" to="visible" begin="1695ms" dur="60ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/>
+      <use href="#ascii-line-18"/>
+      <use href="#ascii-line-19"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="380" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail.com</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text>
+    <rect class="cursor-value" x="657.40" y="396" width="6" height="15"/></g><g id="state-31" data-animation-state="31" visibility="hidden"><set attributeName="visibility" to="visible" begin="1755ms" dur="110ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/>
+      <use href="#ascii-line-18"/>
+      <use href="#ascii-line-19"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="380" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail.com</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text></g><g id="state-32" data-animation-state="32" data-glitch="true" visibility="hidden"><set attributeName="visibility" to="visible" begin="1865ms" dur="40ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <text x="-48" y="195" class="primary">               ~?WuxiW*`   `&quot;#$$$$8!!!!??!!!      </text>
+      <text x="-48" y="215" class="primary">             :X- M$$$$       `&quot;T#$T~!8$WUXU~      </text>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <text x="-51" y="295" class="primary">W$@@M!!! .!~~ !!     .:XUW$W!~ `&quot;~:    :          </text>
+      <text x="-51" y="315" class="primary">#&quot;~~`.:x%`!!  !H:   !WM$$$$Ti.: .!WUn+!`         </text>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/>
+      <use href="#ascii-line-18"/>
+      <use href="#ascii-line-19"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="380" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail.com</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text></g><g id="state-33" data-animation-state="33" visibility="hidden"><set attributeName="visibility" to="visible" begin="1905ms" dur="220ms" fill="remove"/><use href="#panel"/><g clip-path="url(#ascii-viewport)"><use href="#ascii-line-0"/>
+      <use href="#ascii-line-1"/>
+      <use href="#ascii-line-2"/>
+      <use href="#ascii-line-3"/>
+      <use href="#ascii-line-4"/>
+      <use href="#ascii-line-5"/>
+      <use href="#ascii-line-6"/>
+      <use href="#ascii-line-7"/>
+      <use href="#ascii-line-8"/>
+      <use href="#ascii-line-9"/>
+      <use href="#ascii-line-10"/>
+      <use href="#ascii-line-11"/>
+      <use href="#ascii-line-12"/>
+      <use href="#ascii-line-13"/>
+      <use href="#ascii-line-14"/>
+      <use href="#ascii-line-15"/>
+      <use href="#ascii-line-16"/>
+      <use href="#ascii-line-17"/>
+      <use href="#ascii-line-18"/>
+      <use href="#ascii-line-19"/></g>
+    <text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="380" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail.com</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text></g></g>
+</svg>

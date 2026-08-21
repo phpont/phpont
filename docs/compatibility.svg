@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="975" height="460" viewBox="0 0 975 460" role="img" aria-labelledby="title description">
+  <title id="title">phpont profile terminal</title>
+  <desc id="description">A handcrafted terminal-style profile with ASCII skull artwork and developer information.</desc>
+  <style>
+    svg { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 17px; font-variant-ligatures: none; }
+    text, tspan { white-space: pre; }
+    .panel { fill: #161b22; stroke: #30363d; stroke-width: 1; }
+    .primary { fill: #c9d1d9; } .muted { fill: #8b949e; } .key { fill: #ffa657; } .value { fill: #a5d6ff; }
+    .cursor-primary { fill: #c9d1d9; } .cursor-value { fill: #a5d6ff; }
+  </style>
+  <g id="final-state" data-final-state="true"><rect x="0" y="0" width="975" height="460" rx="14" class="panel"/><text x="64" y="120" class="primary">phpont</text><text x="64" y="170"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text></g>
+  <g id="animation-overlay" data-animation-overlay="true" visibility="hidden" data-duration-ms="1100"><set attributeName="visibility" to="visible" begin="100ms" dur="1000ms" fill="remove"/><g visibility="hidden"><set attributeName="visibility" to="visible" begin="100ms" dur="180ms" fill="remove"/><rect x="0" y="0" width="975" height="460" rx="14" class="panel"/></g><g visibility="hidden"><set attributeName="visibility" to="visible" begin="280ms" dur="240ms" fill="remove"/><rect x="0" y="0" width="975" height="460" rx="14" class="panel"/><text x="64" y="120" class="primary">phpont</text><text x="64" y="170"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian</tspan></text><rect x="168" y="156" width="6" height="15" class="cursor-value"/></g><g visibility="hidden"><set attributeName="visibility" to="visible" begin="520ms" dur="280ms" fill="remove"/><rect x="0" y="0" width="975" height="460" rx="14" class="panel"/><text x="64" y="120" class="primary">phpont</text><text x="64" y="170"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text><rect x="270" y="156" width="6" height="15" class="cursor-value"/></g><g visibility="hidden"><set attributeName="visibility" to="visible" begin="800ms" dur="300ms" fill="remove"/><rect x="0" y="0" width="975" height="460" rx="14" class="panel"/><text x="64" y="120" class="primary">phpont</text><text x="64" y="170"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text></g></g>
+</svg>
