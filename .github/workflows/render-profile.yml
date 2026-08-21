@@ -1,0 +1,93 @@
+name: Render profile
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - requirements.txt
+      - .profile/**
+      - .github/workflows/render-profile.yml
+  schedule:
+    - cron: '17 3 * * 1'
+      timezone: 'America/Sao_Paulo'
+    - cron: '17 0 8 9 *'
+      timezone: 'America/Sao_Paulo'
+    - cron: '17 6 8 9 *'
+      timezone: 'America/Sao_Paulo'
+    - cron: '17 12 8 9 *'
+      timezone: 'America/Sao_Paulo'
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: windows-latest
+    env:
+      TZ: America/Sao_Paulo
+      PROFILE_BIRTH_DATE: ${{ vars.PROFILE_BIRTH_DATE }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Validate birth-date repository variable
+        shell: pwsh
+        run: |
+          if ([string]::IsNullOrWhiteSpace($env:PROFILE_BIRTH_DATE)) {
+            throw 'PROFILE_BIRTH_DATE repository variable is required (YYYY-MM-DD).'
+          }
+          @'
+          import os
+          from datetime import date
+          try:
+              date.fromisoformat(os.environ['PROFILE_BIRTH_DATE'])
+          except ValueError as error:
+              raise SystemExit(f'PROFILE_BIRTH_DATE must use YYYY-MM-DD: {error}')
+          '@ | python -
+      - name: Install renderer dependencies
+        shell: pwsh
+        run: python -m pip install --requirement requirements.txt
+      - name: Test canonical renderer
+        shell: pwsh
+        run: python .profile/test_profile.py
+      - name: Render profile assets
+        shell: pwsh
+        run: python .profile/render.py
+      - name: Validate generated assets
+        shell: pwsh
+        run: python .profile/test_profile.py --check-generated
+      - name: Commit changed generated assets
+        id: assets
+        shell: pwsh
+        run: |
+          git diff --quiet -- dark_mode.svg light_mode.svg dark_mode.gif light_mode.gif
+          if ($LASTEXITCODE -eq 0) {
+            'changed=false' | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+            exit 0
+          }
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dark_mode.svg light_mode.svg dark_mode.gif light_mode.gif
+          git commit -m 'chore(profile): refresh generated assets'
+          git push
+          'changed=true' | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+      - name: Keep scheduled renderer active after 30 quiet days
+        if: github.event_name == 'schedule' && steps.assets.outputs.changed == 'false'
+        shell: pwsh
+        run: |
+          $latestUnix = [int64](git log -1 --format=%ct)
+          $latestCommit = [DateTimeOffset]::FromUnixTimeSeconds($latestUnix).UtcDateTime
+          $ageDays = ([DateTime]::UtcNow - $latestCommit).TotalDays
+          if ($ageDays -lt 30) {
+            Write-Output "Latest commit is $([math]::Floor($ageDays)) days old; no keepalive commit needed."
+            exit 0
+          }
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit --allow-empty -m 'chore(profile): keep scheduled renderer active'
+          git push

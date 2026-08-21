@@ -1,0 +1,14 @@
+{
+  "name": "phpont",
+  "os": "Debian GNU/Linux",
+  "wm": "Niri",
+  "shell": "zsh",
+  "editor": "Neovim, VS Code",
+  "kernel": "Full Stack Development",
+  "focus": "Web Security, Rust",
+  "languages_programming": "TypeScript, Rust, Python, C++",
+  "languages_real": "Portuguese, English",
+  "web": "phpont.github.io",
+  "instagram": "@paulohpontarolo",
+  "mail": "paulohponta@gmail.com"
+}

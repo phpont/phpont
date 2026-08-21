@@ -1,0 +1,7 @@
+.venv/
+.venv-previous/
+__pycache__/
+.profile/__pycache__/
+.profile/build/
+.profile/build-previous/
+.profile/preview/

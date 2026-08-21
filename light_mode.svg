@@ -1,53 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" font-family="Andale Mono,AndaleMono,Consolas,monospace" width="975px" height="550px" font-size="16px">
-<style>
-.keyColor {fill: #953800;}
-.valueColor {fill: #0a3069;}
-.addColor {fill: #1a7f37;}
-.delColor {fill: #cf222e;}
-.commentColor {fill: #8b949e;}
-text, tspan {white-space: pre;}
-</style>
-
-<rect width="970px" height="530px" fill="#f6f8fa" rx="15"/>
-
-<text x="-50" y="30" fill="#c9d1d9" class="ascii">
-<tspan x="-50" y="30">                      :::!~!!!!!:.                   </tspan>
-<tspan x="-50" y="50">                  .xUHWH!! !!?M88WHX:.             </tspan>
-<tspan x="-50" y="70">                .X*#M@$!!  !X!M$$$$$$WWx:.         </tspan>
-<tspan x="-50" y="90">               :!!!!!!?H! :!$!$$$$$$$$$$8X:        </tspan>
-<tspan x="-50" y="110">              !!~  ~:~!! :~!$!#$$$$$$$$$$8X:       </tspan>
-<tspan x="-50" y="130">             :!~::!H!    ~.U$X!?R$$$$$$$$MM!      </tspan>
-<tspan x="-50" y="150">             ~!~!!!!~~ .:XW$$$U!!?$$$$$$RMM!       </tspan>
-<tspan x="-50" y="170">               !:~~~ .:!M&quot;T#$$$$WX??#MRRMMM!       </tspan>
-<tspan x="-50" y="190">               ~?WuxiW*`   `&quot;#$$$$8!!!!??!!!      </tspan>
-<tspan x="-50" y="210">             :X- M$$$$       `&quot;T#$T~!8$WUXU~      </tspan>
-<tspan x="-50" y="230">            :%`  ~#$$$m:        ~!~ ?$$$$$$       </tspan>
-<tspan x="-50" y="250">          :!`.-   ~T$$$$8xx.  .xWW- ~&quot;&quot;##*&quot;       </tspan>
-<tspan x="-50" y="270">.....   -~~:&lt;` !    ~?T#$$@@W@*?$$      /`        </tspan>
-<tspan x="-50" y="290">W$@@M!!! .!~~ !!     .:XUW$W!~ `&quot;~:    :          </tspan>
-<tspan x="-50" y="310">#&quot;~~`.:x%`!!  !H:   !WM$$$$Ti.: .!WUn+!`         </tspan>
-<tspan x="-50" y="330">:::~:!!`:X~ .: ?H.!u &quot;$$$B$$$!W:U!T$$M~          </tspan>
-<tspan x="-50" y="350">.~~   :X@!.-~   ?@WTWo(&quot;*$$$W$TH$! `            </tspan>
-<tspan x="-50" y="370">Wi.~!X$?!-~    : ?$$$B$Wu(&quot;**$RM!               </tspan>
-<tspan x="-50" y="390">$R@i.~~ !     :   ~$$$$$B$$en:``                </tspan>
-<tspan x="-50" y="410">?MXT@Wx.~    :     ~&quot;##*$$$$M~                  </tspan>
-</text>
-<text x="370" y="30" fill="#c9d1d9">
-<tspan x="370" y="30">phpont</tspan>
-<tspan x="370" y="50">——————</tspan>
-<tspan x="370" y="70" class="keyColor">OS</tspan>: <tspan class="valueColor">Debian, Windows 10</tspan>
-<tspan x="370" y="90" class="keyColor">Uptime</tspan>: <tspan class="valueColor">19 years</tspan>
-<tspan x="370" y="110" class="keyColor">Host</tspan>: <tspan class="valueColor">Void</tspan>
-<tspan x="370" y="130" class="keyColor">Kernel</tspan>: <tspan class="valueColor">Full Stack Development &amp; Reverse Engineering</tspan>
-<tspan x="370" y="150" class="keyColor">IDE</tspan>: <tspan class="valueColor">Neovim &amp; VSCode</tspan>
-<tspan x="370" y="190" class="keyColor">Languages</tspan>.<tspan class="keyColor">Programming</tspan>: <tspan class="valueColor">C++, Python, Rust, Java</tspan>
-<tspan x="370" y="210" class="keyColor">Languages</tspan>.<tspan class="keyColor">Computer</tspan>: <tspan class="valueColor">HTML, CSS, JS</tspan>
-<tspan x="370" y="230" class="keyColor">Languages</tspan>.<tspan class="keyColor">Real</tspan>: <tspan class="valueColor">Portuguese, English</tspan>
-<tspan x="370" y="270" class="keyColor">Hobbies</tspan>.<tspan class="keyColor">Software</tspan>: <tspan class="valueColor">Hardware hacking, Bug bounty</tspan>
-<tspan x="370" y="330" class="keyColor">Contact</tspan>:
-<tspan x="370" y="350">——————</tspan>
-<tspan x="370" y="370" class="keyColor">Instagram</tspan>: <tspan class="valueColor">https://www.instagram.com/paulohpontarolo/</tspan>
-<tspan x="370" y="390" class="keyColor">Gmail</tspan>: <tspan class="valueColor">paulohponta@gmail.com</tspan>
-</text>
-
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="975" height="460" viewBox="0 0 975 460" role="img" aria-labelledby="title description">
+  <title id="title">phpont profile terminal</title>
+  <desc id="description">A handcrafted terminal-style profile with ASCII skull artwork and developer information.</desc>
+  <style>
+    svg {
+      font-family: Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 16px;
+      font-variant-ligatures: none;
+    }
+    text, tspan { white-space: pre; }
+    .primary { fill: #24292f; }
+    .muted { fill: #57606a; }
+    .key { fill: #953800; }
+    .value { fill: #0a3069; }
+  </style>
+  <rect x="0" y="0" width="975" height="460" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+  <clipPath id="ascii-viewport"><rect x="0" y="18" width="365" height="420"/></clipPath>
+  <g clip-path="url(#ascii-viewport)"><text x="-50" y="35" class="primary">                      :::!~!!!!!:.                   </text>
+    <text x="-50" y="55" class="primary">                  .xUHWH!! !!?M88WHX:.             </text>
+    <text x="-50" y="75" class="primary">                .X*#M@$!!  !X!M$$$$$$WWx:.         </text>
+    <text x="-50" y="95" class="primary">               :!!!!!!?H! :!$!$$$$$$$$$$8X:        </text>
+    <text x="-50" y="115" class="primary">              !!~  ~:~!! :~!$!#$$$$$$$$$$8X:       </text>
+    <text x="-50" y="135" class="primary">             :!~::!H!    ~.U$X!?R$$$$$$$$MM!      </text>
+    <text x="-50" y="155" class="primary">             ~!~!!!!~~ .:XW$$$U!!?$$$$$$RMM!       </text>
+    <text x="-50" y="175" class="primary">               !:~~~ .:!M&quot;T#$$$$WX??#MRRMMM!       </text>
+    <text x="-50" y="195" class="primary">               ~?WuxiW*`   `&quot;#$$$$8!!!!??!!!      </text>
+    <text x="-50" y="215" class="primary">             :X- M$$$$       `&quot;T#$T~!8$WUXU~      </text>
+    <text x="-50" y="235" class="primary">            :%`  ~#$$$m:        ~!~ ?$$$$$$       </text>
+    <text x="-50" y="255" class="primary">          :!`.-   ~T$$$$8xx.  .xWW- ~&quot;&quot;##*&quot;       </text>
+    <text x="-50" y="275" class="primary">.....   -~~:&lt;` !    ~?T#$$@@W@*?$$      /`        </text>
+    <text x="-50" y="295" class="primary">W$@@M!!! .!~~ !!     .:XUW$W!~ `&quot;~:    :          </text>
+    <text x="-50" y="315" class="primary">#&quot;~~`.:x%`!!  !H:   !WM$$$$Ti.: .!WUn+!`         </text>
+    <text x="-50" y="335" class="primary">:::~:!!`:X~ .: ?H.!u &quot;$$$B$$$!W:U!T$$M~          </text>
+    <text x="-50" y="355" class="primary">.~~   :X@!.-~   ?@WTWo(&quot;*$$$W$TH$! `            </text>
+    <text x="-50" y="375" class="primary">Wi.~!X$?!-~    : ?$$$B$Wu(&quot;**$RM!               </text>
+    <text x="-50" y="395" class="primary">$R@i.~~ !     :   ~$$$$$B$$en:``                </text>
+    <text x="-50" y="415" class="primary">?MXT@Wx.~    :     ~&quot;##*$$$$M~                  </text></g>
+  <g><text x="385" y="40" class="primary">phpont</text>
+    <text x="385" y="60" class="muted">──────</text>
+    <text x="385" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="385" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="385" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="385" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="385" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="385" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="385" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="385" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="385" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="385" y="320" class="primary">Contact</text>
+    <text x="385" y="340" class="muted">──────</text>
+    <text x="385" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="385" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="385" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail.com</tspan></text></g>
 </svg>
