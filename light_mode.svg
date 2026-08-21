@@ -5,7 +5,7 @@
   <style>
     svg {
       font-family: Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 16px;
+      font-size: 17px;
       font-variant-ligatures: none;
     }
     text, tspan { white-space: pre; }
@@ -36,20 +36,20 @@
     <text x="-50" y="375" class="primary">Wi.~!X$?!-~    : ?$$$B$Wu(&quot;**$RM!               </text>
     <text x="-50" y="395" class="primary">$R@i.~~ !     :   ~$$$$$B$$en:``                </text>
     <text x="-50" y="415" class="primary">?MXT@Wx.~    :     ~&quot;##*$$$$M~                  </text></g>
-  <g><text x="385" y="40" class="primary">phpont</text>
-    <text x="385" y="60" class="muted">──────</text>
-    <text x="385" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
-    <text x="385" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
-    <text x="385" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
-    <text x="385" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
-    <text x="385" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
-    <text x="385" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
-    <text x="385" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
-    <text x="385" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
-    <text x="385" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
-    <text x="385" y="320" class="primary">Contact</text>
-    <text x="385" y="340" class="muted">──────</text>
-    <text x="385" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
-    <text x="385" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
-    <text x="385" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail.com</tspan></text></g>
+  <g><text x="380" y="40" class="primary">phpont</text>
+    <text x="380" y="60" class="muted">──────</text>
+    <text x="380" y="90"><tspan class="key">OS</tspan><tspan class="primary">: </tspan><tspan class="value">Debian GNU/Linux</tspan></text>
+    <text x="380" y="110"><tspan class="key">Uptime</tspan><tspan class="primary">: </tspan><tspan class="value">19 years</tspan></text>
+    <text x="380" y="130"><tspan class="key">WM</tspan><tspan class="primary">: </tspan><tspan class="value">Niri</tspan></text>
+    <text x="380" y="150"><tspan class="key">Shell</tspan><tspan class="primary">: </tspan><tspan class="value">zsh</tspan></text>
+    <text x="380" y="170"><tspan class="key">Editor</tspan><tspan class="primary">: </tspan><tspan class="value">Neovim, VS Code</tspan></text>
+    <text x="380" y="190"><tspan class="key">Kernel</tspan><tspan class="primary">: </tspan><tspan class="value">Full Stack Development</tspan></text>
+    <text x="380" y="210"><tspan class="key">Focus</tspan><tspan class="primary">: </tspan><tspan class="value">Web Security, Rust</tspan></text>
+    <text x="380" y="250"><tspan class="key">Languages.Programming</tspan><tspan class="primary">: </tspan><tspan class="value">TypeScript, Rust, Python, C++</tspan></text>
+    <text x="380" y="270"><tspan class="key">Languages.Real</tspan><tspan class="primary">: </tspan><tspan class="value">Portuguese, English</tspan></text>
+    <text x="380" y="320" class="primary">Contact</text>
+    <text x="380" y="340" class="muted">──────</text>
+    <text x="380" y="370"><tspan class="key">Web</tspan><tspan class="primary">: </tspan><tspan class="value">phpont.github.io</tspan></text>
+    <text x="380" y="390"><tspan class="key">Instagram</tspan><tspan class="primary">: </tspan><tspan class="value">@paulohpontarolo</tspan></text>
+    <text x="380" y="410"><tspan class="key">Mail</tspan><tspan class="primary">: </tspan><tspan class="value">paulohponta@gmail.com</tspan></text></g>
 </svg>

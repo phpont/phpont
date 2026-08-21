@@ -66,6 +66,15 @@ def foreground_count(image: Image.Image, box: tuple[int, int, int, int], backgro
     return sum(pixel[:3] != color for pixel in image.crop(box).getdata())
 
 
+def contrast_ratio(first: str, second: str) -> float:
+    def luminance(hex_value: str) -> float:
+        channels = [int(hex_value[index:index + 2], 16) / 255 for index in (1, 3, 5)]
+        linear = [channel / 12.92 if channel <= 0.04045 else ((channel + 0.055) / 1.055) ** 2.4 for channel in channels]
+        return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2]
+    a, b = luminance(first), luminance(second)
+    return (max(a, b) + 0.05) / (min(a, b) + 0.05)
+
+
 class ProfileTests(unittest.TestCase):
     def test_age_boundaries_and_leap_year(self) -> None:
         born = date(2000, 9, 8)
@@ -126,11 +135,26 @@ class ProfileTests(unittest.TestCase):
             frame = render.render_frame(theme_name, data, age)
             self.assertEqual(frame.size, render.CANVAS)
             self.assertGreater(foreground_count(frame, (0, 18, 365, 438), theme["BACKGROUND"]), 800, theme_name)
-            self.assertGreater(foreground_count(frame, (385, 20, 950, 430), theme["BACKGROUND"]), 800, theme_name)
-            self.assertLess(foreground_count(frame, (366, 20, 384, 430), theme["BACKGROUND"]), 20, theme_name)
+            self.assertGreater(foreground_count(frame, (render.DEFAULT_FIDELITY.info_x, 20, 950, 430), theme["BACKGROUND"]), 800, theme_name)
+            self.assertLess(foreground_count(frame, (366, 20, render.DEFAULT_FIDELITY.info_x - 2, 430), theme["BACKGROUND"]), 20, theme_name)
             self.assertEqual(frame.getpixel((0, 0))[3], 0, theme_name)
             self.assertGreater(frame.getpixel((14, 0))[3], 0, theme_name)
             self.assertNotEqual(ImageStat.Stat(frame.crop((0, 18, 365, 438)).convert("RGB")).sum, (0.0, 0.0, 0.0), theme_name)
+            self.assertGreaterEqual(contrast_ratio(theme["PRIMARY"], theme["BACKGROUND"]), 4.5, theme_name)
+            self.assertGreaterEqual(contrast_ratio(theme["VALUE"], theme["BACKGROUND"]), 4.5, theme_name)
+
+    def test_fidelity_scaling_preserves_logical_geometry(self) -> None:
+        data, age = render.load_data(), 19
+        one_x = render.FidelityConfig(supersample=1, font_size=17, info_x=380, gif_colors=63)
+        two_x = render.DEFAULT_FIDELITY
+        self.assertEqual(render.physical_canvas(one_x), render.CANVAS)
+        self.assertEqual(render.physical_canvas(two_x), (1950, 920))
+        self.assertGreater(two_x.font_size, render.FONT_SIZE)
+        self.assertEqual(render.render_frame("dark", data, age, fidelity=one_x).size, render.CANVAS)
+        self.assertEqual(render.render_frame("dark", data, age, fidelity=two_x).size, render.CANVAS)
+        svg = render.build_svg("dark", data, age, two_x)
+        self.assertIn("font-size: 17px", svg)
+        self.assertIn('x="380" y="90"', svg)
 
     def test_rendered_assets_determinism_parity_and_no_build_side_effect(self) -> None:
         build_path = ROOT / ".profile" / "build"
@@ -156,6 +180,7 @@ class ProfileTests(unittest.TestCase):
                 expected_rgb.alpha_composite(expected)
                 mean_delta = ImageStat.Stat(ImageChops.difference(actual_rgb.convert("RGB"), expected_rgb.convert("RGB"))).mean
                 self.assertLess(max(mean_delta), 4.0, f"{theme_name} final GIF frame visual drift: {mean_delta}")
+                self.assertTrue(all(pixel[3] in (0, 255) for frame in frames for pixel in frame.getdata()), f"{theme_name} GIF transparency must be binary")
                 glitch_bbox = ImageChops.difference(frames[glitch_index - 1].convert("RGB"), frames[glitch_index].convert("RGB")).getbbox()
                 self.assertIsNotNone(glitch_bbox)
                 self.assertLessEqual(glitch_bbox[2], 365, f"{theme_name} glitch escaped ASCII region")

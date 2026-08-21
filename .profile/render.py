@@ -83,6 +83,19 @@ class AnimationState:
     glitch: bool = False
 
 
+@dataclass(frozen=True)
+class FidelityConfig:
+    """Physical rendering controls, expressed over the single logical layout."""
+
+    supersample: float = 2.0
+    font_size: float = 17.0
+    info_x: int = 380
+    gif_colors: int = 127
+
+
+DEFAULT_FIDELITY = FidelityConfig()
+
+
 TYPING_CHUNKS = (
     (6, 16), (3, 8), (4,), (3,), (7, 17), (8, 22),
     (6, 18), (9, 20, 31), (8, 19), (7, 16), (7, 17), (8, 17, 23),
@@ -228,16 +241,16 @@ def visible_info_rows(data: dict[str, str], age: int, groups: int) -> list[tuple
     return information_rows(data, age)[:count]
 
 
-def info_markup(data: dict[str, str], age: int, groups: int) -> str:
+def info_markup(data: dict[str, str], age: int, groups: int, info_x: int = INFO_X) -> str:
     chunks = []
     for y, row in visible_info_rows(data, age, groups):
         if ": " in row:
             key, value = row.split(": ", 1)
-            chunks.append(f'<text x="{INFO_X}" y="{y}"><tspan class="key">{html.escape(key)}</tspan><tspan class="primary">: </tspan><tspan class="value">{html.escape(value)}</tspan></text>')
+            chunks.append(f'<text x="{info_x}" y="{y}"><tspan class="key">{html.escape(key)}</tspan><tspan class="primary">: </tspan><tspan class="value">{html.escape(value)}</tspan></text>')
         elif row == "──────":
-            chunks.append(_text(INFO_X, y, row, "muted"))
+            chunks.append(_text(info_x, y, row, "muted"))
         else:
-            chunks.append(_text(INFO_X, y, row, "primary"))
+            chunks.append(_text(info_x, y, row, "primary"))
     return "\n    ".join(chunks)
 
 
@@ -252,16 +265,27 @@ def strict_template(template: str, values: dict[str, str]) -> str:
     return template
 
 
-def build_svg(theme_name: str, data: dict[str, str], age: int) -> str:
+def build_svg(theme_name: str, data: dict[str, str], age: int, fidelity: FidelityConfig = DEFAULT_FIDELITY) -> str:
     if theme_name not in THEMES:
         raise ValueError(f"unknown theme: {theme_name}")
     values = dict(THEMES[theme_name])
-    values.update({"ASCII_MARKUP": ascii_markup(len(ASCII_LINES)), "INFO_MARKUP": info_markup(data, age, 8)})
+    values.update({
+        "FONT_SIZE": f"{fidelity.font_size:g}",
+        "ASCII_MARKUP": ascii_markup(len(ASCII_LINES)),
+        "INFO_MARKUP": info_markup(data, age, 8, fidelity.info_x),
+    })
     return strict_template(TEMPLATE_PATH.read_text(encoding="utf-8"), values)
 
 
 def _color(hex_value: str) -> tuple[float, float, float]:
     return tuple(int(hex_value[index:index + 2], 16) / 255 for index in (1, 3, 5))
+
+
+def physical_canvas(fidelity: FidelityConfig = DEFAULT_FIDELITY) -> tuple[int, int]:
+    """Return the physical Cairo canvas for the selected logical fidelity pass."""
+    if fidelity.supersample < 1:
+        raise ValueError("supersample must be at least 1")
+    return tuple(round(value * fidelity.supersample) for value in CANVAS)
 
 
 def _rounded_rect(context: cairo.Context) -> None:
@@ -280,11 +304,11 @@ def _draw_text(context: cairo.Context, x: int, y: int, value: str, color: str) -
     context.show_text(value)
 
 
-def _draw_field(context: cairo.Context, field: ProfileField, value: str, theme: dict[str, str]) -> float:
-    _draw_text(context, INFO_X, field.y, field.key, theme["KEY"])
+def _draw_field(context: cairo.Context, field: ProfileField, value: str, theme: dict[str, str], info_x: int) -> float:
+    _draw_text(context, info_x, field.y, field.key, theme["KEY"])
     key_width = context.text_extents(field.key).x_advance
-    _draw_text(context, int(INFO_X + key_width), field.y, ": ", theme["PRIMARY"])
-    value_x = INFO_X + key_width + context.text_extents(": ").x_advance
+    _draw_text(context, int(info_x + key_width), field.y, ": ", theme["PRIMARY"])
+    value_x = info_x + key_width + context.text_extents(": ").x_advance
     _draw_text(context, int(value_x), field.y, value, theme["VALUE"])
     return value_x + context.text_extents(value).x_advance
 
@@ -295,27 +319,28 @@ def _draw_cursor(context: cairo.Context, x: float, baseline: int, color: str) ->
     context.fill()
 
 
-def cursor_coordinates(context: cairo.Context, data: dict[str, str], age: int, state: AnimationState) -> tuple[float, int] | None:
+def cursor_coordinates(context: cairo.Context, data: dict[str, str], age: int, state: AnimationState, info_x: int = INFO_X) -> tuple[float, int] | None:
     if not state.cursor_visible:
         return None
     if state.cursor_header:
-        return INFO_X + context.text_extents(data["name"][:state.header_chars]).x_advance, 40
+        return info_x + context.text_extents(data["name"][:state.header_chars]).x_advance, 40
     if state.cursor_field is None:
         return None
     field = profile_fields(data, age)[state.cursor_field]
     prefix = field.value[:state.active_chars] if state.active_field == state.cursor_field else field.value
-    value_x = INFO_X + context.text_extents(field.key).x_advance + context.text_extents(": ").x_advance
+    value_x = info_x + context.text_extents(field.key).x_advance + context.text_extents(": ").x_advance
     return value_x + context.text_extents(prefix).x_advance, field.y
 
 
-def render_frame(theme_name: str, data: dict[str, str], age: int, state: AnimationState | None = None) -> Image.Image:
+def render_frame(theme_name: str, data: dict[str, str], age: int, state: AnimationState | None = None, fidelity: FidelityConfig = DEFAULT_FIDELITY) -> Image.Image:
     """The sole rasterization implementation used locally and in Windows CI."""
     theme = THEMES[theme_name]
-    surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, *CANVAS)
+    surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, *physical_canvas(fidelity))
     context = cairo.Context(surface)
     context.set_operator(cairo.OPERATOR_CLEAR)
     context.paint()
     context.set_operator(cairo.OPERATOR_OVER)
+    context.scale(fidelity.supersample, fidelity.supersample)
     _rounded_rect(context)
     context.set_source_rgb(*_color(theme["BACKGROUND"]))
     context.fill_preserve()
@@ -323,7 +348,7 @@ def render_frame(theme_name: str, data: dict[str, str], age: int, state: Animati
     context.set_line_width(1)
     context.stroke()
     context.select_font_face(FONT_FAMILY, cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_NORMAL)
-    context.set_font_size(FONT_SIZE)
+    context.set_font_size(fidelity.font_size)
 
     state = state or build_timeline(data, age)[0]
     context.save()
@@ -335,25 +360,25 @@ def render_frame(theme_name: str, data: dict[str, str], age: int, state: Animati
     context.restore()
 
     if state.header_chars:
-        _draw_text(context, INFO_X, 40, data["name"][:state.header_chars], theme["PRIMARY"])
+        _draw_text(context, fidelity.info_x, 40, data["name"][:state.header_chars], theme["PRIMARY"])
     if state.header_separator:
-        _draw_text(context, INFO_X, 60, "──────", theme["MUTED"])
+        _draw_text(context, fidelity.info_x, 60, "──────", theme["MUTED"])
 
     fields = profile_fields(data, age)
     for field in fields[:state.completed_fields]:
-        _draw_field(context, field, field.value, theme)
+        _draw_field(context, field, field.value, theme, fidelity.info_x)
     if state.contact_visible:
-        _draw_text(context, INFO_X, 320, "Contact", theme["PRIMARY"])
-        _draw_text(context, INFO_X, 340, "──────", theme["MUTED"])
+        _draw_text(context, fidelity.info_x, 320, "Contact", theme["PRIMARY"])
+        _draw_text(context, fidelity.info_x, 340, "──────", theme["MUTED"])
 
     cursor_x: float | None = None
     cursor_y = 0
     cursor_color = theme["VALUE"]
     if state.active_field is not None:
         field = fields[state.active_field]
-        cursor_x = _draw_field(context, field, field.value[:state.active_chars], theme)
+        cursor_x = _draw_field(context, field, field.value[:state.active_chars], theme, fidelity.info_x)
         cursor_y = field.y
-    coordinates = cursor_coordinates(context, data, age, state)
+    coordinates = cursor_coordinates(context, data, age, state, fidelity.info_x)
     if coordinates is not None:
         cursor_x, cursor_y = coordinates
         if state.cursor_header:
@@ -363,29 +388,54 @@ def render_frame(theme_name: str, data: dict[str, str], age: int, state: Animati
 
     png = BytesIO()
     surface.write_to_png(png)
-    return Image.open(png).convert("RGBA")
+    image = Image.open(png).convert("RGBA")
+    if fidelity.supersample != 1:
+        image = image.resize(CANVAS, Image.Resampling.LANCZOS)
+    return image
 
 
-def save_gif(frames: list[Image.Image], output: Path, durations: tuple[int, ...]) -> None:
+def _prepare_gif_frame(frame: Image.Image) -> tuple[Image.Image, Image.Image]:
+    """Flatten soft pixels against the panel before palette conversion.
+
+    GIF has binary transparency. Keeping only fully transparent exterior pixels
+    avoids dark/light halos around Cairo's rounded antialiased panel edge.
+    """
+    rgba = frame.convert("RGBA")
+    alpha = rgba.getchannel("A")
+    panel_background = rgba.getpixel((500, 440))[:3]
+    rgb = Image.new("RGB", CANVAS, panel_background)
+    rgb.paste(rgba.convert("RGB"), mask=alpha)
+    return rgb, alpha
+
+
+def _global_palette(frames: list[Image.Image], colors: int) -> Image.Image:
+    if not 2 <= colors <= 255:
+        raise ValueError("gif_colors must be between 2 and 255")
+    source = Image.new("RGB", (CANVAS[0], CANVAS[1] * len(frames)))
+    for index, frame in enumerate(frames):
+        source.paste(frame, (0, CANVAS[1] * index))
+    return source.quantize(colors=colors, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
+
+
+def save_gif(frames: list[Image.Image], output: Path, durations: tuple[int, ...], fidelity: FidelityConfig = DEFAULT_FIDELITY) -> None:
     if len(frames) != len(durations):
         raise ValueError("GIF frame and duration counts must match")
-    transparent_index = 47
+    transparent_index = 255
+    prepared = [_prepare_gif_frame(frame) for frame in frames]
+    palette = _global_palette([rgb for rgb, _ in prepared], fidelity.gif_colors)
     paletted = []
-    for frame in frames:
-        rgba = frame.convert("RGBA")
-        alpha = rgba.getchannel("A")
-        panel_background = rgba.getpixel((500, 440))[:3]
-        rgb = Image.new("RGB", CANVAS, panel_background)
-        rgb.paste(rgba.convert("RGB"), mask=alpha)
-        indexed = rgb.quantize(colors=47, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
+    for rgb, alpha in prepared:
+        indexed = rgb.quantize(palette=palette, dither=Image.Dither.NONE)
         pixels = list(indexed.getdata())
-        indexed.putdata([transparent_index if opacity == 0 else pixel for pixel, opacity in zip(pixels, alpha.getdata())])
+        indexed.putdata([transparent_index if opacity <= 16 else pixel for pixel, opacity in zip(pixels, alpha.getdata())])
         indexed.info["transparency"] = transparent_index
         paletted.append(indexed)
-    paletted[0].save(output, format="GIF", save_all=True, append_images=paletted[1:], duration=durations, disposal=2, optimize=True, transparency=transparent_index)
+    # Keep the preceding composited frame so Pillow can encode the small typing
+    # changes as deltas. Every supplied frame is still complete and valid alone.
+    paletted[0].save(output, format="GIF", save_all=True, append_images=paletted[1:], duration=durations, disposal=1, optimize=True, transparency=transparent_index)
 
 
-def render(output_root: Path, birth_date: date, render_date: date, keep_frames: bool = False) -> None:
+def render(output_root: Path, birth_date: date, render_date: date, keep_frames: bool = False, fidelity: FidelityConfig = DEFAULT_FIDELITY) -> None:
     data, age = load_data(), calculate_age(birth_date, render_date)
     output_root.mkdir(parents=True, exist_ok=True)
     states = build_timeline(data, age)
@@ -400,14 +450,14 @@ def render(output_root: Path, birth_date: date, render_date: date, keep_frames: 
         frames_dir = Path(frame_root.name)
     try:
         for theme_name in THEMES:
-            (output_root / f"{theme_name}_mode.svg").write_text(build_svg(theme_name, data, age), encoding="utf-8", newline="\n")
+            (output_root / f"{theme_name}_mode.svg").write_text(build_svg(theme_name, data, age, fidelity), encoding="utf-8", newline="\n")
             frames = []
             for index, state in enumerate(states):
-                frame = render_frame(theme_name, data, age, state)
+                frame = render_frame(theme_name, data, age, state, fidelity)
                 frames.append(frame)
                 if keep_frames:
                     frame.save(frames_dir / f"{theme_name}-{index:02d}.png")
-            save_gif(frames, output_root / f"{theme_name}_mode.gif", tuple(state.duration for state in states))
+            save_gif(frames, output_root / f"{theme_name}_mode.gif", tuple(state.duration for state in states), fidelity)
     finally:
         if frame_root is not None:
             frame_root.cleanup()
@@ -417,9 +467,14 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output-root", type=Path, default=ROOT)
     parser.add_argument("--keep-frames", action="store_true", help="write diagnostic PNG frames to .profile/build")
+    parser.add_argument("--supersample", type=float, default=DEFAULT_FIDELITY.supersample, help="physical raster scale before deterministic downsampling")
+    parser.add_argument("--font-size", type=float, default=DEFAULT_FIDELITY.font_size, help="logical monospace font size")
+    parser.add_argument("--info-x", type=int, default=DEFAULT_FIDELITY.info_x, help="logical x origin of the information column")
+    parser.add_argument("--gif-colors", type=int, default=DEFAULT_FIDELITY.gif_colors, help="controlled global GIF palette size")
     args = parser.parse_args()
     try:
-        render(args.output_root.resolve(), birth_date_from_environment(), current_profile_date(), args.keep_frames)
+        fidelity = FidelityConfig(args.supersample, args.font_size, args.info_x, args.gif_colors)
+        render(args.output_root.resolve(), birth_date_from_environment(), current_profile_date(), args.keep_frames, fidelity)
     except (OSError, ValueError, json.JSONDecodeError) as error:
         print(f"render failed: {error}", file=sys.stderr)
         return 2

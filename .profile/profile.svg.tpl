@@ -5,7 +5,7 @@
   <style>
     svg {
       font-family: Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 16px;
+      font-size: {{FONT_SIZE}}px;
       font-variant-ligatures: none;
     }
     text, tspan { white-space: pre; }
